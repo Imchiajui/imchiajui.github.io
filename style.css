@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #0a0a1e; /* 深藍色背景 */
+    color: #e0e0e0; /* 淺灰色文字 */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* 隱藏滾動條，讓畫布填滿 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#particleCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 將畫布置於內容下方 */
+}
+
+.content {
+    position: relative; /* 確保內容在畫布之上 */
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* 半透明背景，增加可讀性 */
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #4d90fe; /* 亮藍色標題 */
+    text-shadow: 0 0 10px #4d90fe, 0 0 20px #4d90fe;
+}
+
+p {
+    font-size: 1.2em;
+}
